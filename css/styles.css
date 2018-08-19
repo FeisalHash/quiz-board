@@ -1,3 +1,21 @@
 h1 {
   color: indigo;
 }
+button {
+  background-color: green;
+}
+input {
+	display: block;
+}
+.radio {
+  color: blue;
+}
+#after_submit {
+	visibility: hidden;
+	background: #ff5459;
+	padding: 10px 20px 10px 20px;
+	width: 400px;
+	border-radius: 20px;
+	margin-left: 20px;
+	font-size: 30px;
+}

@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js" charset="utf-8"></script>
     <script src="js/scripts.js" charset="utf-8"></script>
+    <style media="screen">
+      body {
+      background-image: url(img/background.png);
+      background-repeat: no-repeat;
+      background-size:2200px;
+      }
+    </style>
     <title>JAVASCRIPT QUIZ</title>
   </head>
   <body>
@@ -15,6 +22,36 @@
     <p>Welcome, below you will be asked questions on javascript please answer as many as you can</p>
     <p>Have fun!</p>
 
+    <form id="quiz">
+      <div class="radio">
+        <label for="question1"><strong>Which of the following is not a data type supported by Javascript?</strong></label><br>
+          <input type="radio" name="Which of the follwing is not a data type supported by Javascript" value="undefined">undefined<BR>
+          <input type="radio" name="Which of the follwing is not a data type supported by Javascript" value="null">null<BR>
+          <input type="radio" name="Which of the follwing is not a data type supported by Javascript" value="boolean">boolean<BR>
+          <input type="radio" name="Which of the follwing is not a data type supported by Javascript" value="paragraph">paragraph<BR>
+          <input type="radio" name="Which of the follwing is not a data type supported by Javascript" value="i dont know">i dont know<BR>
+      </div>
+      <div class="radio">
+        <label for="question2"><strong>Which of the following is not a comparison operator supported by Javascript?</strong></label><br>
+          <input type="radio" name="Which of the following is not a comparison operator supported by Javascript" value="<"><<BR>
+          <input type="radio" name="Which of the following is not a comparison operator supported by Javascript" value=">">><BR>
+          <input type="radio" name="Which of the following is not a comparison operator supported by Javascript" value="===">===<BR>
+          <input type="radio" name="Which of the following is not a comparison operator supported by Javascript" value="=">=<BR>
+          <input type="radio" name="Which of the following is not a comparison operator supported by Javascript" value="i dont know">i dont know<BR>
+      </div>
+      <div class="radio">
+        <label for="question3"><strong>What does DOM stand for?</strong></label><br>
+          <input type="radio" name="What does DOM stand for" value="Document Object model">Document Object model<BR>
+          <input type="radio" name="What does DOM stand for" value="Desktop Operator Model">Desktop Operator Model<BR>
+          <input type="radio" name="What does DOM stand for" value="Difference Of Model">Difference Of Model<BR>
+          <input type="radio" name="What does DOM stand for" value="i dont know">i dont know<BR>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+
+    </form>
+    <div id = "after_submit">
+      <p id = "number_correct"></p>
+      <p id = "message"></p>
   </div>
   </body>
 </html>
